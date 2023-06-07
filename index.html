@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *, *:before, *:after, *::before, *::after {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <b>MAKSIMAL UKURAN FILE : 2 GB</b><br>
+    <b>MAKSIMAL JUMLAH FILE : 20 FILE</b><br>
+    <a href="files/">List File Upload</a><br><br><br>
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+        <input type="file" name="fupload[]" multiple="multiple" required="required" /><br><br>
+        <input type="submit" value="Upload" />
+    </form>
+</body>
+</html>
